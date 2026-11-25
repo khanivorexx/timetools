@@ -1,0 +1,65 @@
+<!doctype html>
+<html data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Time Tools</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="title is-2 has-text-centered mb-6">⏱️ Time Tools</h1>
+
+      <div class="fixed-grid has-1-cols-mobile has-3-cols-desktop">
+        <div class="grid">
+          <div class="box has-text-centered">
+            <p class="heading has-text-grey">CURRENT TIME</p>
+            <p id="out" class="title is-1 my-5">--:--:--</p>
+          </div>
+          <div class="box has-text-centered">
+            <p class="heading has-text-grey">STOPWATCH</p>
+            <p id="display" class="title is-1 my-5">--:--:--</p>
+            <div class="buttons is-centered">
+              <button id="startBtn" class="button is-success">Start</button>
+              <button id="stopBtn" class="button is-warning">stop</button>
+              <button id="resetBtn" class="button is-danger">reset</button>
+            </div>
+          </div>
+          <div class="box has-text-centered">
+            <p class="heading has-text-grey">TIMER</p>
+            <p id="timerDisplay" class="title is-1 my-5">00:00</p>
+            <div class="field has-addons has-addons-centered">
+              <p class="control">
+                <input
+                  type="number"
+                  id="timerMinutes"
+                  class="input"
+                  placeholder="minutes"
+                />
+              </p>
+              <p class="control">
+                <input
+                  type="number"
+                  class="input"
+                  id="timerSeconds"
+                  placeholder="seconds"
+                />
+              </p>
+            </div>
+            <div class="buttons is-centered">
+              <button id="timerStartBtn" class="button is-success">
+                Start
+              </button>
+              <button id="timerStopBtn" class="button is-warning">Stop</button>
+              <button id="timerResetBtn" class="button is-danger">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="time.js"></script>
+  </body>
+</html>
